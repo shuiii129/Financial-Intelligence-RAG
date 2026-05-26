@@ -16,7 +16,7 @@ A premium corporate filings and annual reports analysis agent. It automatically 
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 - **Core**: Python 3.10+
 - **Front-end**: Streamlit (Premium Custom Glassmorphic Styling)
