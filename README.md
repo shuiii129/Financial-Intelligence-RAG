@@ -1,18 +1,18 @@
-# 📈 Executive Financial RAG Platform
+#  Executive Financial RAG Platform
 
 A premium corporate filings and annual reports analysis agent. It automatically extracts key financial metrics, generates a dynamic SWOT analysis, visualizes year-over-year trends, and provides a context-aware conversational agent supporting English, Malay, and Mandarin.
 
 ---
 
-## ✨ Features
+##  Features
 
-- **📊 Automated Executive Dashboard**: Instantaneous generation of an executive summary, key Year-over-Year (YoY) financial metrics table, and SWOT analysis quadrants immediately upon document upload.
-- **📈 Interactive Trend Visualizations**: Groups and charts primary metrics (Revenue, Net Income, Operating Income/EBITDA, Assets, Liabilities) using Plotly.
-- **💬 Conversational Agent with Memory**: Resolve follow-up questions (e.g. *"What is the revenue?"* followed by *"Did it grow?"*) via a query-condensing memory chain.
-- **🔍 Hybrid Dense/Sparse Search**: Employs LangChain's `EnsembleRetriever` combining dense semantic search (`FAISS`) and sparse keyword matching (`BM25`) for maximum accuracy with financial tables and specific numbers.
-- **⚡ Rate-Limit Resilient Architecture**: Automatically schedules text embeddings sequentially (30-chunk batches, 0.75s sleeps) to remain safely under Gemini API free tier limits (429 protection).
-- **🛡️ Multi-Model Fallbacks**: Automatically falls back from `gemini-2.5-pro` to `gemini-2.5-flash` if your API key has restricted access levels, guaranteeing continuous functionality.
-- **🌐 Multilingual Support**: Seamlessly identifies and replies to inquiries in English, Malay, or Mandarin.
+- ** Automated Executive Dashboard**: Instantaneous generation of an executive summary, key Year-over-Year (YoY) financial metrics table, and SWOT analysis quadrants immediately upon document upload.
+- ** Interactive Trend Visualizations**: Groups and charts primary metrics (Revenue, Net Income, Operating Income/EBITDA, Assets, Liabilities) using Plotly.
+- ** Conversational Agent with Memory**: Resolve follow-up questions (e.g. *"What is the revenue?"* followed by *"Did it grow?"*) via a query-condensing memory chain.
+- ** Hybrid Dense/Sparse Search**: Employs LangChain's `EnsembleRetriever` combining dense semantic search (`FAISS`) and sparse keyword matching (`BM25`) for maximum accuracy with financial tables and specific numbers.
+- ** Rate-Limit Resilient Architecture**: Automatically schedules text embeddings sequentially (30-chunk batches, 0.75s sleeps) to remain safely under Gemini API free tier limits (429 protection).
+- ** Multi-Model Fallbacks**: Automatically falls back from `gemini-2.5-pro` to `gemini-2.5-flash` if your API key has restricted access levels, guaranteeing continuous functionality.
+- ** Multilingual Support**: Seamlessly identifies and replies to inquiries in English, Malay, or Mandarin.
 
 ---
 
@@ -27,7 +27,7 @@ A premium corporate filings and annual reports analysis agent. It automatically 
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### 1. Clone the repository and navigate inside:
 ```bash
@@ -49,7 +49,7 @@ GOOGLE_API_KEY=your_google_api_key_here
 
 ---
 
-## 💻 Running the Application
+##  Running the Application
 
 Start the Streamlit server:
 ```bash
@@ -60,7 +60,7 @@ The application will launch in your default web browser at **`http://localhost:8
 
 ---
 
-## 🧪 Usage & Testing
+##  Usage & Testing
 
 1. **Upload a Document**: Drop a financial PDF report (annual reports, proxy statements, 10-K filings, etc.) in the sidebar upload box.
 2. **Dashboard Tab**: Check the generated **Executive Summary**, the metric scorecards (which color-code growth trends automatically), the interactive Plotly bar chart, and the **SWOT Analysis** quadrant.
